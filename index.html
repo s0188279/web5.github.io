@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>web5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1></h1>
+  <header id="header">
+      <div class="contain">
+          <img src="logo.png" alt="Логотип" class="logo">
+          <nav id="nav">
+              <ul>
+                  <li><a href="#link1">Главная</a></li>
+                  <li><a href="#link2">О нас</a></li>
+                  <li><a href="#link3">Услуги</a></li>
+                  <li><a href="#link4">Контакты</a></li>
+              </ul>
+          </nav>
+          <h1>Сайтик</h1>
+      </div>
+  </header>
+    <div class="container">
+        <h2>Калькулятор стоимости заказа</h2>
 
+        <div class="product" data-price="100">
+            <label>
+                <input type="checkbox" class="product-checkbox">
+                Маленькая пачка чипсов - 100₽
+            </label>
+            <input type="number" class="quantity" value="1" min="1">
+        </div>
+
+        <div class="product" data-price="200">
+            <label>
+                <input type="checkbox" class="product-checkbox">
+                Большая пачка чипсов - 200₽
+            </label>
+            <input type="number" class="quantity" value="1" min="1">
+        </div>
+
+        <div class="product" data-price="300">
+            <label>
+                <input type="checkbox" class="product-checkbox">
+                Набор (две больших пачки чипсов) - 300₽
+            </label>
+            <input type="number" class="quantity" value="1" min="1">
+        </div>
+
+        <div class="product" data-price="400">
+            <label>
+                <input type="checkbox" class="product-checkbox">
+                Набор (три больших пачки чипсов) - 400₽
+            </label>
+            <input type="number" class="quantity" value="1" min="1">
+        </div>
+
+        <button id="calculate">Подсчитать стоимость</button>
+        <div class="result">
+            <h3>Итоговая стоимость: <span id="total-cost">0</span>₽</h3>
+            <h4>Количество товаров: <span id="total-quantity">0</span></h4>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
